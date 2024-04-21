@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Jaldi&display=swap" rel="stylesheet">
     <title>Monicool</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -18,55 +20,43 @@
             <div class="menu">
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><p id="loginBtn" >Ingresar</p></li>
-                    <li><a href="#">Registrarse</a></li>
+                    <li>
+                        <p id="loginBtn">Ingresar</p>
+                    </li>
+                    <li><a id="Registrarse" href="#">Registrarse</a></li>
                 </ul>
             </div>
 
         </nav>
     </header>
 
-    <main>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Ingresar</h2>
+            <form id="loginForm">
+                <input type="email" id="Correo" name="Correo" placeholder="Correo" required>
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+
+    <main class="mainform">
 
         <div class="formulario">
-            <div class="formbox">
+            <form action="">
+                <input type="email" name="Correo electornico">
+                <input type="text" name="Nombre">
+                <input type="password" name="contraseña" id="">
+                <input type="password" name="Confirmar contraseña">
+            </form>
 
-                <form action="">
+        </div>
 
-                    <h2>Escribenos sobre ti</h2>
+        <div class="banerform">
 
-                    <div class="formtext">
-
-                        <div>
-
-                            <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu Nombre">
-                            <input type="text" name="numero" id="numero" placeholder="Numero de telefono">
-                            <input type="email" name="email" id="email" placeholder="Ingresa tu email">
-
-                            <div class="formtext2">
-                                <input type="text" name="edad" id="edad" placeholder="Edad">
-                                <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad">
-                            </div>
-
-                        </div>
-
-                        <div class="escribenos">
-                            <textarea name="Comentarios" id="Comentarios" cols="30" rows="10"
-                                placeholder="Escribenos tu opinión del servicio"></textarea>
-                        </div>
-
-                    </div>
-
-                    <div class="botons">
-
-                        <input class="boton enviar" type ="submit" value="Enviar">
-                        <input class="boton limpiar" type="reset" value="Limpiar">
-
-                    </div>
-
-                </form>
-
-            </div>
         </div>
 
     </main>
@@ -78,11 +68,13 @@
                 <h2>Síguenos</h2>
                 <nav>
                     <ul>
-                        <li><a target="_blank" href="https://www.facebook.com"><img src="../img/facebook.png" alt=""></a>
+                        <li><a target="_blank" href="https://www.facebook.com"><img src="../img/facebook.png"
+                                    alt=""></a>
                         </li>
                         <li><a target="_blank" href="https://www.youtube.com"><img src="../img/youtube.png" alt=""></a>
                         </li>
-                        <li><a target="_blank" href="https://www.instagram.com"><img src="../img/instagram.png" alt=""></a>
+                        <li><a target="_blank" href="https://www.instagram.com"><img src="../img/instagram.png"
+                                    alt=""></a>
                         </li>
                     </ul>
                 </nav>
@@ -110,6 +102,8 @@
         <span> © Nosoy_Diseñador</span>
 
     </footer>
-    
+
+    <script src="../js/script.js"></script>
 </body>
+
 </html>
