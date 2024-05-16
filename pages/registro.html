@@ -37,7 +37,7 @@
             <form id="loginForm">
                 <input type="email" id="Correo" name="Correo" placeholder="Correo" required>
                 <input type="password" id="password" name="password" placeholder="Contraseña" required>
-                <button type="submit">Entrar</button>
+                <input id="buttonS" type="submit" value="Enviar">
             </form>
         </div>
     </div>
@@ -46,17 +46,17 @@
     <main class="mainform">
 
         <div class="formulario">
-            <form action="">
-                <input type="email" name="Correo electornico">
-                <input type="text" name="Nombre">
-                <input type="password" name="contraseña" id="">
-                <input type="password" name="Confirmar contraseña">
+            <h2>Ingrese sus datos</h2>
+            <form action="../php/guardar.php" method="post">
+                <input type="email" name="email" placeholder="Ingrese correo">
+                <input type="text" name="nombre" placeholder="Ingrese nombre de usuario">
+                <input type="password" name="contraseña" placeholder="Ingrese una contraseña">
+                <input id="buttonS" type="submit" value="Enviar">
             </form>
-
         </div>
 
-        <div class="banerform">
-
+        <div class="bannerform">
+            <img src="../img/2.png" alt="">
         </div>
 
     </main>
